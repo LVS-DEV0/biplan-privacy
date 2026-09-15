@@ -1,266 +1,276 @@
-<title>Biplan & Etkinlik — Gizlilik Politikası</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<!doctype html>
+<html lang="tr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BİPLAN — Gizlilik Politikası</title>
+<meta name="description" content="BİPLAN uygulamasının gizlilik politikası ve KVKK aydınlatma metni.">
 <style>
-:root {
-  --brand: #5B5BF6;
-  --brand-soft: rgba(91,91,246,.08);
-  --bg: #F8F9FC;
-  --surface: #FFFFFF;
-  --border: rgba(12,14,22,.08);
-  --text: #0C0E16;
-  --text-2: #555B6E;
-  --text-3: #8A90A3;
-  --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+:root{
+  --brand:#5B5BF6; --brand-2:#8B5CF6; --accent:#FF4D8D;
+  --bg:#F2F3F7; --surface:#FFFFFF; --surface-2:#F7F8FB;
+  --border:rgba(15,18,34,.08);
+  --text:#0C0E16; --text-2:#565B6E; --text-3:#8A90A3;
+  --brand-soft:rgba(91,91,246,.10);
+  --shadow:0 1px 2px rgba(12,14,22,.05),0 2px 8px rgba(12,14,22,.05);
+  --r:16px; --r-lg:22px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0C0E14;
-    --surface: #13151D;
-    --border: rgba(255,255,255,.07);
-    --text: #F0F2F8;
-    --text-2: #9AA0B4;
-    --text-3: #5A6078;
-    --brand-soft: rgba(91,91,246,.14);
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#07080C; --surface:#12141B; --surface-2:#171A23;
+    --border:rgba(255,255,255,.08);
+    --text:#F3F5FA; --text-2:#A2A9BD; --text-3:#6E7689;
+    --brand:#6D8BFF; --brand-soft:rgba(109,139,255,.16);
+    --shadow:0 1px 2px rgba(0,0,0,.5);
   }
 }
-:root[data-theme="dark"] {
-  --bg: #0C0E14;
-  --surface: #13151D;
-  --border: rgba(255,255,255,.07);
-  --text: #F0F2F8;
-  --text-2: #9AA0B4;
-  --text-3: #5A6078;
-  --brand-soft: rgba(91,91,246,.14);
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--text);font-family:var(--font);
+  font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  padding:0 16px env(safe-area-inset-bottom,0px);
+}
+.wrap{max-width:720px;margin:0 auto;padding-block:40px 64px}
+
+header{text-align:center;margin-bottom:36px}
+.logo{
+  width:64px;height:64px;margin:0 auto 18px;border-radius:20px;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:24px;
+  letter-spacing:-.02em;box-shadow:0 10px 28px rgba(91,91,246,.32);
+}
+h1{font-size:30px;line-height:1.2;letter-spacing:-.02em;margin:0 0 8px;font-weight:750}
+.sub{color:var(--text-2);margin:0;font-size:15px}
+.tarih{
+  display:inline-block;margin-top:14px;padding:5px 13px;border-radius:999px;
+  background:var(--brand-soft);color:var(--brand);font-size:12.5px;font-weight:650;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; min-height: 100%; }
+.ozet{
+  background:linear-gradient(135deg,var(--brand-soft),rgba(139,92,246,.06));
+  border-left:4px solid var(--brand);border-radius:14px;
+  padding:16px 18px;margin-bottom:28px;font-size:14.5px;color:var(--text-2);
+}
+.ozet b{color:var(--text)}
 
-body {
-  font-family: var(--font);
-  background: var(--bg);
-  color: var(--text);
-  font-size: 15px;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  padding-inline: 20px;
-  padding-block: 48px 72px;
+section{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);
+  padding:22px;margin-bottom:16px;box-shadow:var(--shadow);
 }
+h2{
+  font-size:18px;letter-spacing:-.015em;margin:0 0 14px;font-weight:720;
+  display:flex;align-items:center;gap:10px;
+}
+h2::before{
+  content:"";width:4px;height:19px;border-radius:2px;flex:none;
+  background:linear-gradient(180deg,var(--brand),var(--brand-2));
+}
+h3{font-size:14.5px;font-weight:700;margin:20px 0 5px;letter-spacing:-.01em}
+h3:first-of-type{margin-top:0}
+p{margin:0 0 12px;color:var(--text-2)}
+p:last-child{margin-bottom:0}
+ul{margin:0 0 12px;padding-left:20px;color:var(--text-2)}
+li{margin-bottom:7px}
+li::marker{color:var(--brand)}
+li b,p b{color:var(--text);font-weight:640}
+a{color:var(--brand);text-decoration:none;font-weight:600;overflow-wrap:anywhere}
+a:hover{text-decoration:underline}
 
-.wrap {
-  max-width: 680px;
-  margin-inline: auto;
-}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 4px}
+.tablo-kutu{overflow-x:auto;margin:0 -4px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3);font-weight:700}
+td:first-child{font-weight:640;color:var(--text);white-space:nowrap}
+tr:last-child td{border-bottom:0}
 
-header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 48px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid var(--border);
+.vurgu{
+  background:var(--surface-2);border-radius:14px;padding:14px 16px;
+  margin-top:14px;font-size:14px;color:var(--text-2);
 }
-
-.logo {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #5B5BF6, #8B5CF6);
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
+.iletisim{
+  text-align:center;background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  color:#fff;border:0;
 }
-.logo svg { width: 22px; height: 22px; fill: #fff; }
-
-.app-name {
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: -.02em;
-  margin: 0;
-  line-height: 1.2;
+.iletisim h2{justify-content:center;color:#fff}
+.iletisim h2::before{display:none}
+.iletisim p{color:rgba(255,255,255,.88)}
+.iletisim a{
+  display:inline-block;margin-top:10px;padding:11px 22px;border-radius:999px;
+  background:#fff;color:var(--brand);font-weight:700;font-size:15px;
 }
-.app-sub {
-  font-size: 12.5px;
-  color: var(--text-3);
-  margin: 2px 0 0;
-}
-
-h1 {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: -.03em;
-  text-wrap: balance;
-  margin: 0 0 8px;
-  line-height: 1.25;
-}
-.meta {
-  font-size: 13px;
-  color: var(--text-3);
-  margin: 0 0 40px;
-}
-
-h2 {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  margin: 36px 0 10px;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-h2::before {
-  content: '';
-  display: block;
-  width: 3px;
-  height: 16px;
-  border-radius: 2px;
-  background: var(--brand);
-  flex-shrink: 0;
-}
-
-p { margin: 0 0 12px; color: var(--text-2); max-width: 62ch; }
-
-ul {
-  margin: 8px 0 12px;
-  padding-left: 20px;
-  color: var(--text-2);
-}
-ul li { margin-bottom: 5px; }
-
-.table-wrap { overflow-x: auto; margin: 10px 0 16px; }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13.5px;
-}
-th {
-  text-align: left;
-  padding: 8px 12px;
-  background: var(--brand-soft);
-  color: var(--brand);
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: .03em;
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--border);
-}
-td {
-  padding: 9px 12px;
-  color: var(--text-2);
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-}
-tr:last-child td { border-bottom: none; }
-tr:hover td { background: var(--brand-soft); }
-
-.contact-box {
-  margin-top: 40px;
-  padding: 20px 22px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-}
-.contact-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 9px;
-  background: var(--brand-soft);
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
-  color: var(--brand);
-  font-size: 16px;
-}
-.contact-label {
-  font-size: 11.5px;
-  font-weight: 600;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-  color: var(--text-3);
-  margin-bottom: 3px;
-}
-.contact-box a {
-  color: var(--brand);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14.5px;
-}
-.contact-box a:hover { text-decoration: underline; }
-
-footer {
-  margin-top: 56px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  font-size: 12.5px;
-  color: var(--text-3);
-}
+.iletisim a:hover{text-decoration:none;opacity:.92}
+footer{text-align:center;color:var(--text-3);font-size:12.5px;margin-top:28px;line-height:1.7}
 </style>
-
+</head>
+<body>
 <div class="wrap">
-  <header>
-    <div class="logo">
-      <svg viewBox="0 0 24 24"><path d="M17 3H7C5.34 3 4 4.34 4 6v14l8-3 8 3V6c0-1.66-1.34-3-3-3z"/></svg>
-    </div>
-    <div>
-      <p class="app-name">Biplan &amp; Etkinlik</p>
-      <p class="app-sub">LVS Development</p>
-    </div>
-  </header>
 
+<header>
+  <div class="logo">Bİ</div>
   <h1>Gizlilik Politikası</h1>
-  <p class="meta">Son güncelleme: Eylül 2026</p>
+  <p class="sub">BİPLAN · Etkinlik planlama, malzeme listesi ve hesaplaşma</p>
+  <span class="tarih">Son güncelleme: 15 Eylül 2026</span>
+</header>
 
-  <p>Biplan &amp; Etkinlik uygulamasını kullandığınızda hangi verilerin toplandığını, nasıl kullanıldığını ve haklarınızı bu sayfa açıklar. Sorun yaşarsanız her zaman bizimle iletişime geçebilirsiniz.</p>
-
-  <h2>Topladığımız Veriler</h2>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr><th>Veri</th><th>Neden?</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>E-posta adresi</td><td>Giriş doğrulama kodu gönderimi</td></tr>
-        <tr><td>Ad / profil fotoğrafı</td><td>Etkinlik katılımcı listesi ve davetler</td></tr>
-        <tr><td>Konum (isteğe bağlı)</td><td>Etkinlik yeri seçimi; yalnızca siz izin verirseniz</td></tr>
-        <tr><td>Cihaz push token</td><td>Etkinlik hatırlatma bildirimleri</td></tr>
-        <tr><td>Abonelik durumu</td><td>Pro / Ultra plan doğrulaması (RevenueCat)</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2>Üçüncü Taraf Hizmetler</h2>
-  <p>Uygulama aşağıdaki hizmetleri kullanır; her birinin kendi gizlilik politikası vardır:</p>
-  <ul>
-    <li><strong>Firebase (Google)</strong> — kimlik doğrulama ve push bildirimleri</li>
-    <li><strong>RevenueCat</strong> — abonelik satın alma ve doğrulama</li>
-    <li><strong>Google Maps</strong> — etkinlik konum haritası</li>
-    <li><strong>AdMob (Google)</strong> — ücretsiz planda reklam gösterimi</li>
-    <li><strong>Resend</strong> — e-posta gönderimi</li>
-  </ul>
-
-  <h2>Verilerin Saklanması</h2>
-  <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı silmek için uygulama içi "Hesabı Sil" seçeneğini kullanabilirsiniz — tüm verileriniz 30 gün içinde kalıcı olarak silinir.</p>
-
-  <h2>Çocukların Gizliliği</h2>
-  <p>Uygulama 13 yaşın altındaki bireylere yönelik değildir ve bu yaş grubundan bilerek veri toplanmaz.</p>
-
-  <h2>Politika Değişiklikleri</h2>
-  <p>Önemli değişiklikler olduğunda bu sayfayı güncelleriz ve güncelleme tarihini yukarıda belirtiriz.</p>
-
-  <div class="contact-box">
-    <div class="contact-icon">✉</div>
-    <div>
-      <p class="contact-label">İletişim</p>
-      <a href="mailto:obironur8@gmail.com">obironur8@gmail.com</a>
-    </div>
-  </div>
-
-  <footer>
-    © 2026 LVS Development · Biplan &amp; Etkinlik · Tüm hakları saklıdır.
-  </footer>
+<div class="ozet">
+  <b>Kısaca:</b> Verilerini satmıyoruz, reklam için profil çıkarmıyoruz.
+  Konumun yalnızca sen açtığında ve yalnızca o etkinliğin katılımcılarıyla paylaşılır,
+  sunucuda en fazla 15 dakika durur. Hesabını uygulamadan silebilirsin; verilerin
+  30 gün içinde kalıcı olarak silinir.
 </div>
+
+<section>
+  <h2>Veri sorumlusu</h2>
+  <p>Bu politika, BİPLAN mobil uygulaması ve web sürümü için geçerlidir.
+  6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusu:</p>
+  <p><b>LVS Development</b> · <a href="mailto:obironur8@gmail.com">obironur8@gmail.com</a></p>
+</section>
+
+<section>
+  <h2>Hangi verileri işliyoruz</h2>
+
+  <h3>Hesap bilgileri</h3>
+  <p>E-posta adresin, adın ve —yüklediysen— profil fotoğrafın. Google veya Apple ile
+  giriş yaparsan bu bilgiler oradan gelir; şifreni hiçbir zaman görmez ve saklamayız.</p>
+
+  <h3>Etkinlik içeriği</h3>
+  <p>Oluşturduğun ve katıldığın etkinlikler, başlık ve açıklamalar, tarih/saat ve yer
+  bilgisi, malzeme listeleri, masraf ve hesaplaşma kayıtları.</p>
+
+  <h3>Mesajlar ve fotoğraflar</h3>
+  <p>Etkinlik sohbetinde yazdığın mesajlar ve yüklediğin fotoğraflar. Bunlar yalnızca
+  aynı etkinliğe katılan kişilere görünür; uçtan uca şifreli değildir.</p>
+
+  <h3>Konum</h3>
+  <p>Yalnızca sen o etkinlikte <b>"Konumumu paylaş"</b> anahtarını açtığın sürece
+  anlık konumun alınır. Paylaşım etkinlikten 6 saat önce başlayabilir ve bitişinden
+  2 saat sonra kendiliğinden kapanır; bu pencerenin dışında konumun hiç gönderilmez.
+  Sunucuda en fazla 15 dakika tutulur, sonra silinir. Geçmiş rota kaydı tutulmaz.
+  Anahtarı kapattığın anda son konumun da hemen silinir.</p>
+
+  <h3>Cihaz</h3>
+  <p>Bildirim gönderebilmek için cihazının bildirim kimliği (FCM jetonu) ve platformu
+  (Android/iOS). Reklam kimliği, kişi rehberi, çağrı kaydı veya SMS'lerine erişmiyoruz.</p>
+
+  <h3>Abonelik</h3>
+  <p>Pro/Ultra aboneliğinin durumu. <b>Ödeme bilgilerin bize hiç ulaşmaz</b> — kart
+  ve fatura bilgileri App Store ya da Google Play'de kalır.</p>
+</section>
+
+<section>
+  <h2>Neden işliyoruz</h2>
+  <ul>
+    <li>Hizmeti sunmak: etkinlik organizasyonu, malzeme listesi, hesaplaşma, sohbet ve bildirimler</li>
+    <li>Hesabını doğrulamak ve güvenliği sağlamak</li>
+    <li>Kötüye kullanımı ve spam'i önlemek</li>
+    <li>Ücretsiz planda reklam göstermek (hedefleme için profilin çıkarılmaz)</li>
+    <li>Yasal yükümlülükleri yerine getirmek</li>
+  </ul>
+  <p>Verilerini üçüncü taraflara <b>satmıyoruz</b> ve pazarlama amacıyla paylaşmıyoruz.</p>
+</section>
+
+<section>
+  <h2>Kullandığımız hizmetler</h2>
+  <p>BİPLAN'ı çalıştırabilmek için aşağıdaki sağlayıcılardan yararlanıyoruz.
+  Her birinin kendi gizlilik politikası vardır.</p>
+  <div class="tablo-kutu">
+  <table>
+    <tr><th>Hizmet</th><th>Ne için</th></tr>
+    <tr><td>Firebase (Google)</td><td>Google/Apple ile giriş doğrulama ve bildirim gönderimi</td></tr>
+    <tr><td>Google Haritalar<br>ve Places</td><td>Harita gösterimi, yer arama ve çevredeki mekân bilgileri</td></tr>
+    <tr><td>Google Gemini</td><td>Keşfet sekmesindeki öneri metinlerini yazar. Yalnızca mekân ve hava durumu bilgisi gönderilir — kim olduğun, adın veya e-postan gönderilmez.</td></tr>
+    <tr><td>Google AdMob</td><td>Ücretsiz planda reklam gösterimi</td></tr>
+    <tr><td>RevenueCat</td><td>Abonelik durumunun doğrulanması</td></tr>
+    <tr><td>App Store /<br>Google Play</td><td>Abonelik satışı ve ödeme</td></tr>
+    <tr><td>Resend</td><td>Giriş kodu e-postalarının gönderimi</td></tr>
+    <tr><td>Railway</td><td>Sunucu ve veritabanı barındırma</td></tr>
+  </table>
+  </div>
+  <div class="vurgu">Keşfet özelliğinde Google'a <b>etkinliğin konumu</b> gider,
+  kimliğin gitmez. Konum paylaşımında ise konumun yalnızca kendi sunucumuza ve
+  oradan yalnızca o etkinliğin katılımcılarına gider.</div>
+</section>
+
+<section>
+  <h2>Kimlerle paylaşıyoruz</h2>
+  <p>Etkinlik içeriğin (malzemeler, masraflar, mesajlar, fotoğraflar, paylaştığın konum)
+  yalnızca <b>aynı etkinliğe katılan kişilerle</b> paylaşılır. Bunun dışında sadece
+  yukarıdaki altyapı sağlayıcılarıyla, hizmeti çalıştırmak için gerektiği kadar veri paylaşılır.</p>
+  <p>Yasal bir zorunluluk (mahkeme kararı, resmî talep) olması hâlinde mevzuatın
+  gerektirdiği ölçüde paylaşım yapılabilir.</p>
+</section>
+
+<section>
+  <h2>Ne kadar süre saklıyoruz</h2>
+  <div class="tablo-kutu">
+  <table>
+    <tr><th>Veri</th><th>Saklama süresi</th></tr>
+    <tr><td>Hesap ve içerik</td><td>Hesabın açık olduğu sürece</td></tr>
+    <tr><td>Konum</td><td>En fazla 15 dakika, sonra otomatik silinir</td></tr>
+    <tr><td>Bildirim jetonu</td><td>Uygulama kurulu olduğu sürece</td></tr>
+    <tr><td>Hesap silindiğinde</td><td>Tüm veriler 30 gün içinde kalıcı olarak silinir</td></tr>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>Hesabını ve verilerini silme</h2>
+  <p>Hesabını istediğin zaman uygulamadan silebilirsin:
+  <b>Profil → Hakkımda ve yasal → Hesabımı sil</b>. Hesabın hemen kapanır,
+  verilerin 30 gün içinde kalıcı olarak silinir.</p>
+  <p>Uygulamayı kurmadan veya erişemiyorsan, silme talebini
+  <a href="mailto:obironur8@gmail.com?subject=Hesap%20silme%20talebi">obironur8@gmail.com</a>
+  adresine yazarak iletebilirsin. Talepler 30 gün içinde sonuçlandırılır.</p>
+</section>
+
+<section>
+  <h2>Haklarınız</h2>
+  <p>KVKK madde 11 kapsamında; kişisel verilerinin işlenip işlenmediğini öğrenme,
+  bilgi talep etme, işlenme amacını öğrenme, yurt içinde veya yurt dışında aktarıldığı
+  üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini isteme, silinmesini
+  veya yok edilmesini isteme, işleme faaliyetine itiraz etme ve zarara uğraman hâlinde
+  zararın giderilmesini talep etme haklarına sahipsin.</p>
+  <p>Taleplerini <a href="mailto:obironur8@gmail.com">obironur8@gmail.com</a> adresine
+  iletebilirsin; en geç 30 gün içinde yanıtlanır.</p>
+</section>
+
+<section>
+  <h2>Çocukların gizliliği</h2>
+  <p>BİPLAN 13 yaşın altındaki kullanıcılara yönelik değildir ve bilerek bu yaşın
+  altındaki kişilerden veri toplamaz. Böyle bir verinin toplandığını fark edersek
+  derhal sileriz. Çocuğunun veri paylaştığını düşünen ebeveynler bizimle
+  iletişime geçebilir.</p>
+</section>
+
+<section>
+  <h2>Güvenlik ve veri aktarımı</h2>
+  <p>Tüm iletişim HTTPS ile şifrelenir. Sunucu erişimi sınırlıdır ve oturumlar
+  kısa ömürlü jetonlarla yürütülür. Hiçbir sistem %100 güvenli olmadığından
+  mutlak güvenlik garantisi veremeyiz.</p>
+  <p>Kullandığımız sağlayıcıların bir kısmı (Google, RevenueCat, Resend, Railway)
+  sunucularını yurt dışında barındırır; bu nedenle verilerin yurt dışına aktarılabilir.
+  Hizmeti kullanarak bu aktarıma onay vermiş olursun.</p>
+</section>
+
+<section>
+  <h2>Değişiklikler</h2>
+  <p>Bu politika zaman zaman güncellenebilir. Önemli bir değişiklik olduğunda
+  uygulama içinde bilgilendirilirsin. Sayfanın üstündeki "son güncelleme" tarihi
+  her zaman geçerli sürümü gösterir.</p>
+</section>
+
+<section class="iletisim">
+  <h2>Sorunuz mu var?</h2>
+  <p>Gizlilik, veri talepleri ve içerik şikâyetleri için tek adres:</p>
+  <a href="mailto:obironur8@gmail.com">obironur8@gmail.com</a>
+</section>
+
+<footer>
+  BİPLAN · LVS Development<br>
+  Para BİPLAN üzerinden geçmez — hesaplaşma bilgisi gösterilir, transferi kendin yaparsın.
+</footer>
+
+</div>
+</body>
+</html>
